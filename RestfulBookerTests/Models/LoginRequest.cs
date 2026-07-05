@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace RestfulBookerTests.Models
 {
-    internal class LoginRequest
+    public class LoginRequest
     {
+        public string? UserName { get; set; }
+        public string? Password { get; set; }
     }
 }

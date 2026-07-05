@@ -13,7 +13,21 @@ namespace RestfulBookerTests.Helpers
 
         public APIClient()
         {
-            client = new RestClient("https://restful-booker.herokuapp.com/");
+            client = new RestClient("\"https://restful-booker.herokuapp.com\"");
+
+        }
+
+        public RestResponse Login(string username, string password)
+        {
+            var request = new RestRequest("/auth", Method.Post);
+
+            request.AddJsonBody(new
+            {
+                UserName = username,
+                Password = password
+            });
+
+            return client.Execute(request);
         }
     }
 }

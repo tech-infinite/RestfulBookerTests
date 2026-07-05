@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestfulBookerTests.Tests.API
 {
-    internal class LoginAPITests
+    public class LoginAPITests
     {
     }
 }

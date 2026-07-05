@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace RestfulBookerTests.Models
 {
-    public class LoginResponse
+    public class BookingResponse
     {
-        public string? Token { get; set; }
-       
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int TotalPrice { get; set; }
     }
 }
