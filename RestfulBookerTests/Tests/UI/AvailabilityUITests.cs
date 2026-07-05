@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestfulBookerTests.Tests.UI
 {
-    internal class AvailabilityUITests
+    public class AvailabilityUITests
     {
     }
 }

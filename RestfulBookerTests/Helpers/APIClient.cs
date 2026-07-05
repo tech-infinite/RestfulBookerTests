@@ -29,5 +29,25 @@ namespace RestfulBookerTests.Helpers
 
             return client.Execute(request);
         }
+
+        public RestResponse CreateToken(string username, string password)
+        {
+            var request = new RestRequest("/auth", Method.Post);
+
+            request.AddJsonBody(new
+            {
+                username = username,
+                password = password
+            });
+
+            return client.Execute(request);
+        }
+
+        public RestResponse GetBooking(int bookingId)
+        {
+            var request = new RestRequest($"/booking/{bookingId}", Method.Get);
+
+            return client.Execute(request);
+        }
     }
 }

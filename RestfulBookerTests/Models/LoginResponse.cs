@@ -9,6 +9,6 @@ namespace RestfulBookerTests.Models
     public class LoginResponse
     {
         public string? Token { get; set; }
-       
+       public string? Reason { get; set;
     }
 }
